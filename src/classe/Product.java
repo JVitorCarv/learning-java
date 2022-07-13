@@ -5,6 +5,12 @@ public class Product {
     double price;
     double discount;
 
+    Product(String initialName) {
+        name = initialName;
+    }
+
+    Product() {}
+
     double getPriceWithDiscount() {
         return price * (1 - discount);
     }

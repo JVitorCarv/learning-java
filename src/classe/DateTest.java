@@ -9,9 +9,9 @@ public class DateTest {
         d1.printFormattedDate();
 
         Date d2 = new Date();
-        d2.day = 9;
-        d2.month = 5;
-        d2.year = 1988;
-        System.out.printf("%s", d2.getFormattedDate());
+        System.out.printf("%s\n", d2.getFormattedDate());
+
+        Date d3 = new Date(13, 7, 2022);
+        d3.printFormattedDate();
     }
 }
