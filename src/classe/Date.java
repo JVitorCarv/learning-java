@@ -6,15 +6,14 @@ public class Date {
     int year;
 
     Date () {
-        day = 1;
-        month = 1;
-        year = 1970;
+        this(1, 1, 1970);
+        // Calls another constructor, so watch out not to call twice and create a loop
     }
 
-    Date (int initialDay, int initialMonth, int initialYear) {
-        day = initialDay;
-        month = initialMonth;
-        year = initialYear;
+    Date (int day, int month, int year) {
+        this.day = day;
+        this.month = month;
+        this.year = year;
     }
 
     String getFormattedDate() {
