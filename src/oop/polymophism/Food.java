@@ -1,6 +1,6 @@
 package oop.polymophism;
 
-public class Food {
+public abstract class Food {
     private double weight;
 
     public Food(double weight) {
