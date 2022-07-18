@@ -27,6 +27,10 @@ public class Driving {
             ferrari.brake();
         }
         System.out.println(ferrari.getSpeed());
+
+        ferrari.turnOnTurbo();
+        ferrari.accelerate();
+        System.out.println(ferrari.getSpeed());
     }
 
 

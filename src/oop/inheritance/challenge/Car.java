@@ -4,7 +4,7 @@ public class Car {
 
 
     private int speed;
-    protected int brakeAcceleration;
+    private int brakeAcceleration;
     private int acceleration;
     private final int MAX_SPEED;
 
@@ -30,5 +30,13 @@ public class Car {
     public void brake() {
         if (speed >= brakeAcceleration){ this.speed -= brakeAcceleration; }
         else { this.speed = 0; }
+    }
+
+    public int getAcceleration() {
+        return acceleration;
+    }
+
+    public void setAcceleration(int acceleration) {
+        this.acceleration = acceleration;
     }
 }
