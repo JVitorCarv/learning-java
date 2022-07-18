@@ -2,12 +2,12 @@ package oop.inheritance.example;
 
 public class Hero extends Player{
 
-    Hero(int x, int y) {
+    public Hero(int x, int y) {
         super(x, y);
     }
 
     //Method overriding, just as example, of course it's not the best way to implement this
-    boolean attack(Player enemy) {
+    public boolean attack(Player enemy) {
         int deltaX = Math.abs(this.x - enemy.x);
         int deltaY = Math.abs(this.y - enemy.y);
 

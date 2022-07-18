@@ -1,4 +1,8 @@
-package oop.inheritance.example;
+package oop.inheritance.mains;
+
+import oop.inheritance.example.Direction;
+import oop.inheritance.example.Hero;
+import oop.inheritance.example.Monster;
 
 public class Game {
     public static void main(String[] args) {
@@ -11,7 +15,7 @@ public class Game {
         monster.walk(Direction.NORTH);
         monster.walk(Direction.EAST);
 
-        System.out.println(monster.x + " " + monster.y);
+        System.out.println(monster.getX() + " " + monster.getY());
 
         monster.walk(Direction.SOUTH);
         monster.walk(Direction.WEST);
@@ -20,7 +24,7 @@ public class Game {
 
         monster.attack(hero);
         hero.attack(monster);
-        System.out.println("Monster: " + monster.hp);
-        System.out.println("Hero: " + hero.hp);
+        System.out.println("Monster: " + monster.getHp());
+        System.out.println("Hero: " + hero.getHp());
     }
 }

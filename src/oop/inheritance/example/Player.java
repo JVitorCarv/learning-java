@@ -1,16 +1,19 @@
 package oop.inheritance.example;
 
 public class Player {
-    int x;
-    int y;
-    int hp = 100;
+
+    protected int x;
+
+    protected int y;
+
+    protected int hp = 100;
 
     Player(int x, int y) {
         this.x = x;
         this.y = y;
     }
 
-    boolean attack(Player enemy) {
+    public boolean attack(Player enemy) {
         int deltaX = Math.abs(this.x - enemy.x);
         int deltaY = Math.abs(this.y - enemy.y);
 
@@ -21,7 +24,7 @@ public class Player {
         return false;
     }
 
-    boolean walk(Direction direction) {
+    public boolean walk(Direction direction) {
         switch (direction) {
             case NORTH:
                 y--;
@@ -37,5 +40,17 @@ public class Player {
                 break;
         }
         return true;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public int getHp() {
+        return hp;
     }
 }

@@ -1,7 +1,7 @@
 package oop.inheritance.challenge;
 
 public class Ferrari extends Car {
-    Ferrari() {
+    public Ferrari() {
         super(15, 300);
     }
 }

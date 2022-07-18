@@ -9,7 +9,7 @@ public class CarTest {
     @Test
     public void speedMustNotBeNegativeAfterBrake() {
         testCar.brake();
-        Assertions.assertEquals(0, testCar.speed);
+        Assertions.assertEquals(0, testCar.getSpeed());
     }
 
     @Test
@@ -17,6 +17,6 @@ public class CarTest {
         for (int i = 0; i < 41; i++) {
             testCar.accelerate();
         }
-        Assertions.assertEquals(200, testCar.speed);
+        Assertions.assertEquals(200, testCar.getSpeed());
     }
 }

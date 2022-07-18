@@ -1,10 +1,12 @@
 package oop.inheritance.challenge;
 
 public class Car {
-    int speed;
-    int brakeAcceleration;
-    int acceleration;
-    final int MAX_SPEED;
+
+
+    private int speed;
+    protected int brakeAcceleration;
+    private int acceleration;
+    private final int MAX_SPEED;
 
     Car() {
         this(5, 200);
@@ -16,13 +18,16 @@ public class Car {
         this.acceleration = acceleration;
         this.MAX_SPEED = maxSpeed;
     }
+    public int getSpeed() {
+        return speed;
+    }
 
-    void accelerate() {
-        if (speed <=  - acceleration) { this.speed += acceleration; }
+    public void accelerate() {
+        if (speed <=  MAX_SPEED - acceleration) { this.speed += acceleration; }
         else {this.speed = MAX_SPEED;}
     }
 
-    void brake() {
+    public void brake() {
         if (speed >= brakeAcceleration){ this.speed -= brakeAcceleration; }
         else { this.speed = 0; }
     }

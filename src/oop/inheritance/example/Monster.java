@@ -1,11 +1,11 @@
 package oop.inheritance.example;
 
 public class Monster extends Player{
-    Monster() {
+    public Monster() {
         super(0, 0);
     }
 
-    Monster(int x, int y) {
+    public Monster(int x, int y) {
         super(x, y);
     }
 }
