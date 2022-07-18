@@ -2,13 +2,9 @@ package oop.inheritance.example;
 
 public class Game {
     public static void main(String[] args) {
-        Monster monster = new Monster();
-        monster.x = 10;
-        monster.y = 10;
+        Monster monster = new Monster(10, 10);
 
-        Hero hero = new Hero();
-        hero.x = 10;
-        hero.y = 11;
+        Hero hero = new Hero(10, 11);
 
         monster.walk(Direction.NORTH);
         monster.walk(Direction.EAST);

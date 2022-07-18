@@ -5,6 +5,11 @@ public class Player {
     int y;
     int hp = 100;
 
+    Player(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
     boolean attack(Player enemy) {
         int deltaX = Math.abs(this.x - enemy.x);
         int deltaY = Math.abs(this.y - enemy.y);
