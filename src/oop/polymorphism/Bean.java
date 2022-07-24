@@ -1,4 +1,4 @@
-package oop.polymophism;
+package oop.polymorphism;
 
 public class Bean extends Food {
     public Bean(double weight) {

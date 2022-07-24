@@ -1,4 +1,4 @@
-package oop.polymophism;
+package oop.polymorphism;
 
 public class Person {
     private double weight;

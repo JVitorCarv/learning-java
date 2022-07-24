@@ -1,4 +1,4 @@
-package oop.polymophism;
+package oop.polymorphism;
 
 public abstract class Food {
     private double weight;

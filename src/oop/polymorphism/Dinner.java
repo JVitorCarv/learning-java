@@ -1,4 +1,4 @@
-package oop.polymophism;
+package oop.polymorphism;
 
 public class Dinner {
     public static void main(String[] args) {
