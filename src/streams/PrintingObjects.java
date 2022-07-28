@@ -21,7 +21,7 @@ public class PrintingObjects {
         }
 
         System.out.println("\nUsing stream...");
-        Stream<String> stream = approved.stream();
+        Stream<String> stream =  approved.stream();
         stream.forEach(System.out::println);
     }
 }
